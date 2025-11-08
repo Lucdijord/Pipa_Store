@@ -23,7 +23,7 @@ function carregarPipas() {
             <div class="card">
                 <img src="${pipa.imagem}" alt="${pipa.nome}">
                 <p>R$ ${pipa.preco}</p>
-                <a href="pedido.html?id=${pipa.id}" class="btn">Fazer pedido</a>
+                <a href="../cadastros/cadastro_pedidos.html?id=${pipa.id}" class="btn">Fazer pedido</a>
             </div>
         `;
     });
