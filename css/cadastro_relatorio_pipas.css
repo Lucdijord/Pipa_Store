@@ -5,45 +5,38 @@
 }
 
 body {
-    background: #79DAF7;
     font-family: Arial, sans-serif;
-    height: 100%;
+    background: #79DAF7;
+    min-height: 100vh;
+    padding-bottom: 70px;
 }
-
-/* ---------------------------- CADASTRO PIPAS - ADMIN --------------------------- */
-
-/* ----------------------------
-   HEADER ADMIN
----------------------------- */
 
 .headercp {
     width: 100%;
     padding: 20px 40px;
     background: #79F7C1;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column;  /* título em cima, nav embaixo */
-    align-items: center;     /* centraliza horizontalmente */
+    flex-direction: column;
+    align-items: center;
     gap: 15px;
     text-align: center;
     box-sizing: border-box;
     border-bottom: 3px solid #4FCF79;
 }
 
-/* Título do painel */
 .headercp h1 {
     font-size: 24px;
     font-weight: bold;
     color: #004d33;
 }
 
-/* Navegação */
 .headercp nav ul {
     list-style: none;
     display: flex;
     gap: 25px;
-    flex-wrap: wrap; /* quebra linha se necessário */
-    justify-content: center; /* centraliza horizontalmente */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .headercp nav ul li a {
@@ -59,7 +52,6 @@ body {
     color: #fff;
 }
 
-
 .maincp {
     max-width: 1000px;
     margin: 40px auto;
@@ -74,7 +66,7 @@ body {
     border: 2px solid #ddd;
     border-radius: 12px;
     padding: 25px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
 .secao-formcp h2,
@@ -126,12 +118,12 @@ body {
 .lista-admincp .card-admincp {
     background: #fff;
     border-radius: 12px;
-    overflow: hidden; /* garante que a imagem respeite o border-radius e ocupe todo o card */
-    box-shadow: 0 3px 8px rgba(0,0,0,0.07);
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 0; /* remove padding interno para imagem ocupar todo o card */
+    padding: 0;
 }
 
 .card-admincp img {
@@ -165,26 +157,22 @@ body {
     background: #d62323;
 }
 
-.footercp {
+footer {
+    position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
     background: #79F7C1;
-    color: black;
+    color: #004d33;
     text-align: center;
-    padding: 12px 0;
-    font-size: 14px;
+    padding: 10px 0;
+    border-top: 3px solid #4FCF79;
+    font-weight: bold;
 }
-
-
-/* ---------------------------- FIM CADASTRO PIPAS - ADMIN --------------------------- */
-
-/* ----------------------------
-   RELATÓRIOS - TABELAS
----------------------------- */
 
 .tabela-container {
     width: 100%;
-    overflow-x: auto; /* evita quebrar layout */
+    overflow-x: auto;
 }
 
 .tabela-relatorio {
@@ -193,7 +181,7 @@ body {
     background: white;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
 .tabela-relatorio thead {
@@ -218,4 +206,3 @@ body {
 .tabela-relatorio tr:hover {
     background: #e8f7ff;
 }
-

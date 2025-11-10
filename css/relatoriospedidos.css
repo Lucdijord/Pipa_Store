@@ -4,12 +4,13 @@
   box-sizing: border-box;
 }
 
-
 body {
   font-family: Arial, sans-serif;
-  background-color: #b3ecff;
-  margin: 0;
-  padding: 0;
+  background: #79DAF7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 70px; 
 }
 
 .headercp {
@@ -19,31 +20,25 @@ body {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  /* título em cima, nav embaixo */
   align-items: center;
-  /* centraliza horizontalmente */
   gap: 15px;
   text-align: center;
   box-sizing: border-box;
   border-bottom: 3px solid #4FCF79;
 }
 
-/* Título do painel */
 .headercp h1 {
   font-size: 24px;
   font-weight: bold;
   color: #004d33;
 }
 
-/* Navegação */
 .headercp nav ul {
   list-style: none;
   display: flex;
   gap: 25px;
   flex-wrap: wrap;
-  /* quebra linha se necessário */
   justify-content: center;
-  /* centraliza horizontalmente */
 }
 
 .headercp nav ul li a {
@@ -85,8 +80,6 @@ body {
   text-align: center;
 }
 
-/* ---- NOVO ESTILO DA TABELA ---- */
-
 .container-relatorio {
   max-width: 1600px;
   background: rgb(121, 178, 247);
@@ -105,7 +98,6 @@ body {
 .tabela-container {
   width: 100%;
   overflow-x: auto;
-  /* evita quebrar layout em telas pequenas */
 }
 
 .tabela-relatorio {
@@ -140,13 +132,15 @@ body {
   background: #e8f7ff;
 }
 
-/* ------------------------------- */
-
-.footer {
-  background-color: #6cf3b4;
-  text-align: center;
-  padding: 10px;
+footer {
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
+  background: #79F7C1;
+  color: #004d33;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 3px solid #4FCF79;
+  font-weight: bold;
 }

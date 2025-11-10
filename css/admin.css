@@ -4,16 +4,15 @@
     box-sizing: border-box;
 }
 
-/* ===== BODY ===== */
 body {
     font-family: Arial, sans-serif;
     background: #79DAF7;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-bottom: 70px;
 }
 
-/* ===== CABEÇALHO ===== */
 .header {
     width: 100%;
     padding: 20px 40px;
@@ -27,14 +26,12 @@ body {
     border-bottom: 3px solid #4FCF79;
 }
 
-/* LOGO / TÍTULO */
 .logo {
     font-size: 26px;
     font-weight: bold;
     color: #004d33;
 }
 
-/* ===== NAVEGAÇÃO ===== */
 .nav {
     display: flex;
     justify-content: center;
@@ -64,7 +61,6 @@ body {
     color: #fff;
 }
 
-/* ===== BOTÃO LOGIN / VOLTAR ===== */
 #login_bttn {
     padding: 8px 18px;
     background: #007bff;
@@ -81,7 +77,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* ===== CONTEÚDO PRINCIPAL ===== */
 .main {
     max-width: 1000px;
     margin: 40px auto;
@@ -91,7 +86,6 @@ body {
     gap: 30px;
 }
 
-/* Seções dentro do painel */
 .main section {
     background-color: #79B2F7;
     border: 2px solid #ddd;
@@ -111,14 +105,12 @@ body {
     margin-bottom: 15px;
 }
 
-/* ===== GRID DE CARDS ===== */
 .container-lista_pipas {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 20px;
 }
 
-/* ===== CARD PADRÃO ===== */
 .card {
     background: white;
     border-radius: 12px;
@@ -150,7 +142,6 @@ body {
     font-size: 15px;
 }
 
-/* ===== BOTÃO DOS CARDS ===== */
 .btn {
     display: block;
     margin: 10px;
@@ -161,7 +152,6 @@ body {
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
-    transition: background 0.2s, transform 0.1s;
 }
 
 .btn:hover {
@@ -169,19 +159,19 @@ body {
     transform: translateY(-2px);
 }
 
-/* ===== RODAPÉ ===== */
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    padding: 15px 0;
-    text-align: center;
     background: #79F7C1;
-    color: black;
-    font-size: 1rem;
-    margin-top: 30px;
+    color: #004d33;
+    text-align: center;
+    padding: 10px 0;
     border-top: 3px solid #4FCF79;
+    font-weight: bold;
 }
 
-/* ===== RESPONSIVIDADE ===== */
 @media (max-width: 768px) {
     .nav ul {
         flex-direction: column;

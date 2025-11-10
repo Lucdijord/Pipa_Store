@@ -1,8 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   background: #79DAF7;
-  margin: 0;
-  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 70px; 
 }
 
 .header {
@@ -11,36 +19,33 @@ body {
     background: #79F7C1;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     display: flex;
-    flex-direction: column;  /* título em cima, nav embaixo */
-    align-items: center;     /* centraliza horizontalmente */
+    flex-direction: column;  
+    align-items: center;     
     gap: 15px;
     text-align: center;
     box-sizing: border-box;
     border-bottom: 3px solid #4FCF79;
 }
 
-/* LOGO */
 .logo {
     font-size: 24px;
     font-weight: bold;
     color: #004d33;
 }
 
-/* NAV — linha de baixo */
 .nav {
     display: flex;
-    justify-content: space-between;  /* menu à esquerda, login à direita */
+    justify-content: space-between;  
     align-items: center;
     width: 100%;
 }
 
-/* MENU */
 .nav ul {
     list-style: none;
     display: flex;
     gap: 25px;
-    flex-wrap: wrap; /* quebra linha se necessário */
-    justify-content: center; /* centraliza horizontalmente */
+    flex-wrap: wrap; 
+    justify-content: center; 
 }
 
 .nav ul li a {
@@ -56,7 +61,6 @@ body {
     color: #fff;
 }
 
-/* LOGIN */
 #login_bttn {
     padding: 8px 18px;
     background: #007bff;
@@ -156,11 +160,14 @@ button:hover {
 }
 
 footer {
-    bottom: 0;
-    width: 100%;
-    background: #79F7C1;
-    color: black;
-    text-align: center;
-    padding: 12px 0;
-    font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #79F7C1;
+  color: #004d33;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 3px solid #4FCF79;
+  font-weight: bold;
 }

@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Relatório de Clientes - Pipa Store</title>
   <link rel="stylesheet" href="../css/clientes.css">
 </head>
+
 <body>
   <header class="headercp">
-        <h1>Painel Administrativo - Cadastro de Pipas</h1>
+    <h1>Painel Administrativo - Relatório Clientes</h1>
 
-        <nav>
-            <ul>
-                <li><a href="cadastro_pipas.html">Cadastrar pipas</a></li>
-                <li><a href="cadastro_clientes.html">Cadastrar clientes</a></li>
-                <li><a href="../admin.html">Admin</a></li>
-                <li><a href="../relatorios/relatorio_clientes.html">Relatório Clientes</a></li>
-                <li><a href="../relatorios/relatorio_pedidos.html">Relatório Pedidos</a></li>
-                <li><a href="../relatorios/relatorio_pipas.html">Relatório Pipas</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+      <ul>
+        <li><a href="../cadastros/cadastro_pipas.html">Cadastrar pipas</a></li>
+        <li><a href="../cadastros/cadastro_clientes.html">Cadastrar clientes</a></li>
+        <li><a href="../admin.html">Admin</a></li>
+        <li><a href="relatorio_clientes.html">Relatório Clientes</a></li>
+        <li><a href="relatorio_pedidos.html">Relatório Pedidos</a></li>
+        <li><a href="relatorio_pipas.html">Relatório Pipas</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main class="maincp">
     <section class="secao-listacp">
-        <h2>Clientes Cadastrados</h2>
-        <div class="tabela-container">
-            <table class="tabela-relatorio">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Nome</th>
-                  <th>Telefone</th>
-                  <th>Email</th>
-                  <th>Ações</th>
-                </tr>
-              </thead>
-              <tbody id="tabelaPipas"></tbody>
-            </table>
-        </div>
+      <h2>Clientes Cadastrados</h2>
+      <div class="tabela-container">
+        <table class="tabela-relatorio">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Nome</th>
+              <th>Telefone</th>
+              <th>Email</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="tabelaPipas"></tbody>
+        </table>
+      </div>
     </section>
   </main>
 
-  <footer class="footercp">
-        <p>© 2025 Anjos Pipas - Painel Administrativo</p>
-    </footer>
+  <footer>
+    <p>© 2025 Anjos Pipas - Painel Administrativo</p>
+  </footer>
 
 
   <script src="../js/relatorios_clientes.js"></script>
 </body>
-</html>
 
+</html>
