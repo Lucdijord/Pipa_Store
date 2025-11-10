@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes - Pipa Store</title>
+   <link rel="stylesheet" href="../css/clientes.css">
+</head>
+
+<body>
+    <header class="headercp">
+        <h1>Painel Administrativo - Cadastro de Pipas</h1>
+
+        <nav>
+            <ul>
+                <li><a href="cadastro_pipas.html">Cadastrar pipas</a></li>
+                <li><a href="cadastro_clientes.html">Cadastrar clientes</a></li>
+                <li><a href="../admin.html">Admin</a></li>
+                <li><a href="../relatorios/relatorio_clientes.html">Relatório Clientes</a></li>
+                <li><a href="../relatorios/relatorio_pedidos.html">Relatório Pedidos</a></li>
+                <li><a href="../relatorios/relatorio_pipas.html">Relatório Pipas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="maincp">
+        <section class="secao-formcp">
+            <h2>Formulário de Cadastro</h2>
+            <form id="formPipacp">
+                <label for="nome">Nome:</label>
+                <input type="text" id="precoPipacp" placeholder="Ex: João Silva" required>
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="precoPipacp" placeholder="Ex: (11) 98765-4321" required>
+                <label for="email">Email:</label>
+                <input type="email" id="precoPipacp" placeholder="Ex: joao@email.com">
+                <button type="submit" class="btncp">Salvar Cliente</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footercp">
+        <p>© 2025 Anjos Pipas - Painel Administrativo</p>
+    </footer>
+
+    <script src="../js/clientes.js"></script>
+</body>
+
+</html>
