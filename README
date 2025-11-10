@@ -1,6 +1,6 @@
-# 🪁 PipaStore 
+# 🪁 Anjos-Pipas
 
-Bem-vindo ao **PipaStore**, um site desenvolvido como parte de um projeto acadêmico com o objetivo de aplicar todos os conceitos aprendidos em sala de aula de **HTML, CSS e JavaScript**.  
+Bem-vindo ao **Anjos-Pipas**, um site desenvolvido como parte de um projeto acadêmico com o objetivo de aplicar todos os conceitos aprendidos em sala de aula de **HTML, CSS e JavaScript**.  
 O tema escolhido pelo grupo foi **"venda de pipas"**, combinando criatividade com funcionalidades completas de um sistema web simples, mas funcional.
 
 ---
@@ -40,7 +40,7 @@ Desenvolver um **site funcional** e **responsivo** que simula uma pequena loja d
 ✅ **Edição e exclusão de registros** diretamente dos relatórios.  
 ✅ **Página administrativa protegida** – acesso via login e controle com `sessionStorage`.  
 ✅ **Páginas de relatórios dinâmicos** que exibem os dados cadastrados.  
-✅ **Estilização completa** com **CSS Grid** e **Flexbox**.  
+✅ **Estilização completa** com **Flexbox**.  
 ✅ **Responsividade total** – site adaptado para desktop, tablet e celular.  
 ✅ **Boas práticas de acessibilidade**, como uso de labels, contrastes e textos alternativos.
 
